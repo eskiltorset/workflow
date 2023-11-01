@@ -1,7 +1,8 @@
 {
-  "name": "css-frameworks-ca",
-  "version": "1.0.0",
+  "name": "workflow",
+  "version": "0.0.1",
   "description": "Test",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "build": "sass src/scss:dist/css",
@@ -16,5 +17,13 @@
   },
   "dependencies": {
     "bootstrap-dark-5": "^1.1.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eskiltorset/workflow.git"
+  },
+  "bugs": {
+    "url": "https://github.com/eskiltorset/workflow/issues"
+  },
+  "homepage": "https://github.com/eskiltorset/workflow#readme"
 }
