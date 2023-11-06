@@ -1,6 +1,6 @@
 {
   "name": "workflow",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "Test",
   "type": "module",
   "main": "index.js",
@@ -9,11 +9,13 @@
     "start": "sass --watch src/scss:dist/css & live-server",
     "lint": "eslint src/**/*.js",
     "lint-fix": "eslint src/**/*.js --cache --fix",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "test": "node index.js",
+    "format": "prettier -w index.js"
   },
   "keywords": [],
   "author": "Noroff",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "eslint": "^8.52.0",
     "husky": "^8.0.3",
@@ -32,10 +34,10 @@
   "bugs": {
     "url": "https://github.com/eskiltorset/workflow/issues"
   },
-  "homepage": "https://github.com/eskiltorset/workflow#readme",
+  
   "lint-staged": {
     "*.js": [
-      "prettier --write",
+      "npx prettier --write index.js",
       "eslint --fix"
     ],
     "*.html": [
