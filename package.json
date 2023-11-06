@@ -34,11 +34,11 @@
   "bugs": {
     "url": "https://github.com/eskiltorset/workflow/issues"
   },
-  
   "lint-staged": {
     "*.js": [
-      "npx prettier --write index.js",
-      "eslint --fix"
+      "prettier --write",
+      "eslint --fix",
+      "eslint --cache --fix"
     ],
     "*.html": [
       "prettier --write"
