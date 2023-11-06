@@ -4,5 +4,7 @@ import ui from "./ui/index.js";
 ui();
 router();
 
-console.log
-("Intentional Error");;;
+console . log  
+
+
+(   "Intentional Formatting Error"   )  ;

@@ -36,6 +36,7 @@
   },
   "lint-staged": {
     "*.js": [
+      "prettier --check",
       "prettier --write",
       "eslint --fix",
       "eslint --cache --fix"
