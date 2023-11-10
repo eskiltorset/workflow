@@ -1,2 +1,8 @@
 /node_modules
 /dist
+
+# npm
+node_modules/
+
+# eslint
+.eslintcache
