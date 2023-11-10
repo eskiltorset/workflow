@@ -5,7 +5,7 @@ describe("User login with correct e-mail but invalid password", () => {
   
     it("attempts to log in user with valid e-mail and invalid password", () => {
       // Visit the website
-      cy.visit("http://127.0.0.1:5500/");
+      cy.visit("https://mellifluous-daffodil-f7f1ad.netlify.app");
       cy.wait(2000);
   
       cy.intercept(`${Cypress.env("apiLoginUrl")}`).as("authLogin");

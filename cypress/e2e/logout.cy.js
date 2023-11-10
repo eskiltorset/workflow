@@ -5,7 +5,7 @@ describe("User logout from their user", () => {
 
   it("logs in user and accesses profile", () => {
     // Visit the website
-    cy.visit("http://127.0.0.1:5500/");
+    cy.visit("https://mellifluous-daffodil-f7f1ad.netlify.app");
     cy.wait(2000);
 
     cy.intercept(`${Cypress.env("apiLoginUrl")}`).as("authLogin");

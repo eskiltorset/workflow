@@ -3,9 +3,9 @@ describe("User login with invalid e-mail", () => {
     cy.clearLocalStorage();
   })
 
-  it("attempts to log in user with invalid e-mail ", () => {
+  it("attempts to log in user with invalid e-mail", () => {
     // Visit the website
-    cy.visit("http://127.0.0.1:5500/");
+    cy.visit("https://mellifluous-daffodil-f7f1ad.netlify.app");
     cy.wait(2000);
 
     cy.intercept(`${Cypress.env("apiLoginUrl")}`).as("authLogin");
